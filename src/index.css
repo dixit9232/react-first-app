@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Bricolage Grotesque";
+}
+
+:root {
+    --primary-color: #2F4F7F;
+    --secondary-color: #F2F2F2;
+    --tertiary-color: #599b0f;
+    --background-color: #0e0e0e;
+}
+
+
+body {
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.6rem;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    line-height: 1.56;
+}
+
+
+
+h1 {
+    font-size: 3.4rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+
+.container {
+    max-width: 142rem;
+    margin: 0 auto;
+    padding: 4.5rem 2.4rem;
+}
+
+.grid {
+    display: grid;
+    gap: 3.6rem;
+}
+
+
+.grid-three-columns {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-two-columns {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.heading {
+    padding: 3.2rem 0;
+
+}
+
+@media (max-width:1230px) and (min-width: 768px) {
+    .grid-three-columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (width<=768px) {
+    .grid-three-columns {
+        grid-template-columns: repeat(1, minmax(30rem, 1fr));
+    }
+
+    .container {
+        padding: 3rem 2.4rem;
+    }
+}
