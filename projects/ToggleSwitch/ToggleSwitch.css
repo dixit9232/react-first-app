@@ -1,0 +1,75 @@
+:root {
+    --switch-button-off-color: red;
+    --switch-button-color-active: green;
+    --switch-background-color: rgb(80, 80, 80);
+    --switch-button-border-color: rgb(131, 131, 131);
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+.toggle-switch {
+    width: 50rem;
+    background-color: var(--switch-background-color);
+    border-radius: 100rem;
+    -webkit-border-radius: 100rem;
+    -moz-border-radius: 100rem;
+    -ms-border-radius: 100rem;
+    -o-border-radius: 100rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.switch-button {
+    width: 25rem;
+    aspect-ratio: 1;
+    background-color: red;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    place-items: center;    
+    justify-content: center;
+    font-size: 2rem;
+    font-weight:bolder;
+    text-transform: uppercase;
+    margin: 2rem;
+    border: 1.5rem solid rgb(131, 131, 130);
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+}
+
+.on {
+    background-color: var(--switch-button-color-active);
+    transform: translateX(calc(100% - 4rem));
+    -webkit-transform: translateX(calc(100% - 4rem));
+    -moz-transform: translateX(calc(100% - 4rem));
+    -ms-transform: translateX(calc(100% - 4rem));
+    -o-transform: translateX(calc(100% - 4rem));
+}
+
+
+.off {
+    background-color: var(--switch-button-off-color);
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
