@@ -15,9 +15,6 @@ body {
     align-items: center;
     height: 100vh;
 }
-
-
-
 .toggle-switch {
     width: 50rem;
     background-color: var(--switch-background-color);

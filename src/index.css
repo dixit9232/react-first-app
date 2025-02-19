@@ -41,6 +41,10 @@ p {
     line-height: 1.56;
 }
 
+li{
+    list-style: none;
+    font-size: 1.4rem;
+}
 
 
 h1 {

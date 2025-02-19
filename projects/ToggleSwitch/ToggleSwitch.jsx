@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./ToggleSwitch.css";
+import style from "./ToggleSwitch.module.css";
 
 export const ToggleSwitch = () => {
   const [isOn, setIsOn] = useState(false);
@@ -8,16 +8,16 @@ export const ToggleSwitch = () => {
     setIsOn(!isOn);
   };
 
-  const switchStatus = isOn ? "on" : "off";
+  const switchStatus = isOn ? style.on : style.off;
   const switchColor = { backgroundColor: isOn ? "green" : "" };
 
   return (
     <div
-      className="toggle-switch"
+      className={style["toggle-switch"]}
       style={switchColor}
       onClick={handleToggleSwitch}
     >
-      <div className={`switch-button ${switchStatus}`}>{switchStatus}</div>
+      <div className={`${style['switch-button']} ${switchStatus}`}>{isOn?"on":'off'}</div>
     </div>
   );
 };
