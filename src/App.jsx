@@ -1,5 +1,5 @@
-import { Todo } from "../projects/TodoProject/Todo";
+import { Counter } from "../hooks/useState/Counter";
 
 export default function App() {
-  return <Todo/>;
+  return <Counter/>;
 }

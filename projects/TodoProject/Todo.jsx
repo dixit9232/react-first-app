@@ -77,7 +77,7 @@ export const Todo = () => {
             <li key={index} className={styles.task}>
               <span
                 className={
-                  completedTaskList.includes(task) ? styles.taskComplete : ""
+                  completedTaskList.includes(task) && styles.taskComplete
                 }
               >
                 {task}
