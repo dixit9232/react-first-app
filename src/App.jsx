@@ -1,5 +1,5 @@
-import { Counter } from "../hooks/useState/Counter";
+import { RegistrationForm } from "./RegistrationForm/RegistrationForm";
 
 export default function App() {
-  return <Counter/>;
+  return <RegistrationForm/>;
 }

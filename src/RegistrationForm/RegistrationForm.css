@@ -1,0 +1,39 @@
+* {
+    font-family: Mona Sans;
+}
+
+.formCard {
+    background-color: #fff;
+    max-width: 30%;
+    box-shadow: 0 0 0.7rem 2px #ffffff9a;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+h1 {
+    color: black;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+input {
+    font-size: 1.2rem !important;
+}
+
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
