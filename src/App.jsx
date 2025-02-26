@@ -1,5 +1,5 @@
-import { RegistrationForm } from "./RegistrationForm/RegistrationForm";
+import { Counter } from "./hooks/useEffect/Counter";
 
 export default function App() {
-  return <RegistrationForm/>;
+  return <Counter/>;
 }
