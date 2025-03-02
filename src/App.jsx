@@ -1,5 +1,5 @@
-import { Counter } from "./hooks/useEffect/Counter";
+import { UseRef } from "./hooks/useRef/UseRef";
 
 export default function App() {
-  return <Counter/>;
+  return <UseRef/>;
 }
