@@ -1,12 +1,5 @@
-import { ContextAPIProvider } from "./hooks/ContextAPI/ContextAPI";
-import { ButtonComponent, ContextAPIComponent } from "./hooks/ContextAPI/ContextAPIComponent";
+import { MemoComponent } from "../src/hooks/MemoReact/index.jsx";
 
-
-export default function App() {
-  return (
-    <ContextAPIProvider>
-      <ContextAPIComponent />
-      <ButtonComponent></ButtonComponent>
-    </ContextAPIProvider>
-  );
-}
+export const App = () => {
+  return <MemoComponent></MemoComponent>;
+};

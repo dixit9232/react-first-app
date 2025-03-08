@@ -17,7 +17,7 @@ export const ButtonComponent = () => {
   return (
     <div className="d-flex justify-content-center">
       <button
-        className="btn btn-primary text-capitalize fs-3 px-5 py-3"
+        className="btn btn-primary text-capitalize fs-3 px-5 py-3 "
         onClick={handleButtonClick}
       >
         increment
