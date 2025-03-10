@@ -1,5 +1,6 @@
-import { MemoComponent } from "../src/hooks/MemoReact/index.jsx";
+
+import { UserCallBackHook } from "./hooks/UseCallBackHook";
 
 export const App = () => {
-  return <MemoComponent></MemoComponent>;
+  return UserCallBackHook();
 };
