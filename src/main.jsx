@@ -1,9 +1,9 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./index.css";
+// import "./index.css";
 import { App } from "./App.jsx";
+import "./projects/ReactRouterExample/MoviesWeb/css/index.css";
 
 const rootElement = document.getElementById("root");
 

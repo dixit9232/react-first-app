@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Mona Sans;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    width: 100%;
+
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #333;
+}
+
+li {
+    list-style: none;
+    color: #333;
+}
+
+h1 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #333;
+}
+
+h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #333;
+}
+
+h3 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #333;
+}
+
+p {
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    
+}

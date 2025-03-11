@@ -1,0 +1,69 @@
+.header {
+box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    background: #eeeeee;
+}
+
+
+.header-text {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: blue;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.nav-list {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-item a {
+    list-style: none;
+    text-decoration: none;
+    font-weight: 500;
+    outline: none;
+}
+
+
+.nav-item a::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: .3rem;
+    margin-top: 0.2rem;
+    background-color: blue;
+}
+
+.nav-item a:hover {
+    color: blue;
+}
+
+.nav-item a:hover::after {
+    animation: hover 0.5s forwards;
+    -webkit-animation: hover 0.5s forwards;
+}
+
+.nav-item a.active {
+    color: blue;
+}
+
+@keyframes hover {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+
+}
