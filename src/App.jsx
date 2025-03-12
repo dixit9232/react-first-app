@@ -4,12 +4,14 @@ import { Home } from "./projects/ReactRouterExample/MoviesWeb/Pages/Home";
 import { About } from "./projects/ReactRouterExample/MoviesWeb/Pages/About";
 import { Movies } from "./projects/ReactRouterExample/MoviesWeb/Pages/Movies";
 import { Contact } from "./projects/ReactRouterExample/MoviesWeb/Pages/Contact";
+import { ErrorPage } from "./projects/ReactRouterExample/MoviesWeb/components/UI/ErrorPage";
 
 export const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
       element: <AppLayout />,
+      errorElement: <ErrorPage />,
       children: [
         {
           path: "/",
