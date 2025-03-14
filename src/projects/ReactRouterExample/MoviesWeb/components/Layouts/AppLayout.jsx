@@ -11,6 +11,8 @@ export const AppLayout = () => {
     <div className="container">
       <Header />
       {isLoading ? <Loader /> : <Outlet />}
+      
+ 
       <Footer />
     </div>
   );
