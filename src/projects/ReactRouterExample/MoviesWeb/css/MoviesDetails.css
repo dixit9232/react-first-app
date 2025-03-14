@@ -1,0 +1,153 @@
+.page-title {
+    font-size: 28px;
+    margin: 20px 0;
+    color: #222;
+    font-weight: bold;
+    text-align: star;
+}
+
+.movie-page {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.movie-container {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.movie-poster {
+    width: 250px;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.movie-poster:hover {
+    transform: scale(1.05);
+}
+
+.movie-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.movie-info h2 {
+    margin: 0;
+    color: #222;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.movie-info p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #666;
+}
+
+.movie-details {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.movie-details h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #444;
+    border-bottom: 2px solid #ffcc00;
+    display: inline-block;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.movie-details p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+.ratings {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.imdb-rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.stars {
+    display: flex;
+}
+
+.star {
+    font-size: 20px;
+    margin-right: 3px;
+}
+
+.full {
+    color: gold;
+}
+
+.half {
+    color: orange;
+}
+
+.movie-details a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.movie-details a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .movie-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+    }
+
+    .movie-info {
+        padding: 10px;
+    }
+
+    .movie-poster {
+        width: 80%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .movie-container {
+        width: 100%;
+    }
+
+    .movie-poster {
+        width: 70%;
+    }
+}

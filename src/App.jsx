@@ -5,6 +5,9 @@ import { About } from "./projects/ReactRouterExample/MoviesWeb/Pages/About";
 import { Movies } from "./projects/ReactRouterExample/MoviesWeb/Pages/Movies";
 import { Contact } from "./projects/ReactRouterExample/MoviesWeb/Pages/Contact";
 import { ErrorPage } from "./projects/ReactRouterExample/MoviesWeb/components/UI/ErrorPage";
+import { fetchMovieDetails, fetchMovies, submitContactForm } from "./projects/ReactRouterExample/MoviesWeb/APIs/FetchMovieData";
+import { MoviesDetails } from "./projects/ReactRouterExample/MoviesWeb/Pages/MoviesDetails";
+
 
 export const App = () => {
   const router = createBrowserRouter([
@@ -12,6 +15,7 @@ export const App = () => {
       path: "/",
       element: <AppLayout />,
       errorElement: <ErrorPage />,
+
       children: [
         {
           path: "/",
@@ -24,10 +28,16 @@ export const App = () => {
         {
           path: "/movies",
           element: <Movies />,
+          loader: fetchMovies,
+        },{
+          path: "/movies/:id",
+          element: <MoviesDetails />,
+          loader: fetchMovieDetails,
         },
         {
           path: "/contact",
           element: <Contact />,
+          action: submitContactForm
         },
       ],
     },
