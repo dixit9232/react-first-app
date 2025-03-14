@@ -2,7 +2,7 @@
     background: #111;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 10px;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -21,6 +21,8 @@
     display: flex;
     justify-content: center;
     gap: 1.5rem;
+    flex-wrap: wrap;
+    /* Allows links to wrap on small screens */
 }
 
 .footer-links li {
@@ -35,4 +37,22 @@
 
 .footer-links a:hover {
     color: #00aaff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .footer {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .footer-text {
+        font-size: 0.9rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        /* Stack links vertically on small screens */
+        gap: 0.8rem;
+    }
 }

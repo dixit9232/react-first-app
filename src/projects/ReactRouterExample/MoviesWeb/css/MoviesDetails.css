@@ -1,9 +1,9 @@
 .page-title {
-    font-size: 28px;
+    font-size: 2.8rem;
     margin: 20px 0;
     color: #222;
     font-weight: bold;
-    text-align: star;
+    text-align: center;
 }
 
 .movie-page {
@@ -48,12 +48,12 @@
 .movie-info h2 {
     margin: 0;
     color: #222;
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: bold;
 }
 
 .movie-info p {
-    font-size: 16px;
+    font-size: 1.6rem;
     margin: 5px 0;
     color: #666;
 }
@@ -69,7 +69,7 @@
 
 .movie-details h3 {
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 2rem;
     color: #444;
     border-bottom: 2px solid #ffcc00;
     display: inline-block;
@@ -78,7 +78,7 @@
 }
 
 .movie-details p {
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.5;
     color: #666;
 }
@@ -101,7 +101,7 @@
 }
 
 .star {
-    font-size: 20px;
+    font-size: 2rem;
     margin-right: 3px;
 }
 
@@ -123,7 +123,7 @@
     text-decoration: underline;
 }
 
-/* Responsive Design */
+/* 🔹 Tablet View (1024px and below) */
 @media (max-width: 1024px) {
     .movie-container {
         flex-direction: column;
@@ -140,14 +140,66 @@
         width: 80%;
         max-width: 300px;
     }
+
+    .movie-info h2 {
+        font-size: 2.2rem;
+    }
+
+    .movie-info p {
+        font-size: 1.5rem;
+    }
 }
 
+/* 🔹 Mobile View (768px and below) */
 @media (max-width: 768px) {
     .movie-container {
         width: 100%;
+        padding: 15px;
     }
 
     .movie-poster {
         width: 70%;
+        max-width: 250px;
+    }
+
+    .movie-info h2 {
+        font-size: 2rem;
+    }
+
+    .movie-info p {
+        font-size: 1.4rem;
+    }
+
+    .movie-details {
+        padding: 15px;
+    }
+}
+
+/* 🔹 Small Mobile View (480px and below) */
+@media (max-width: 480px) {
+    .movie-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .movie-poster {
+        width: 90%;
+        max-width: 220px;
+    }
+
+    .movie-info h2 {
+        font-size: 1.8rem;
+    }
+
+    .movie-info p {
+        font-size: 1.3rem;
+    }
+
+    .movie-details h3 {
+        font-size: 1.8rem;
+    }
+
+    .movie-details p {
+        font-size: 1.4rem;
     }
 }

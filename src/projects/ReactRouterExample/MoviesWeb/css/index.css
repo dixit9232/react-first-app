@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: Mona Sans;
+    font-family: 'Mona Sans', sans-serif;
 }
 
 html {
@@ -14,7 +14,6 @@ body {
     background-color: #f4f4f4;
     color: #333;
     width: 100%;
-
 }
 
 a {
@@ -54,5 +53,68 @@ p {
 .container {
     width: 80%;
     margin: 0 auto;
-    
+    max-width: 1200px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 3.2rem;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 56.25%;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 50%;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
 }

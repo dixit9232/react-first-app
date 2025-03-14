@@ -1,3 +1,4 @@
+/* Error Section */
 .error-section {
     height: 100vh;
     max-width: 100%;
@@ -6,45 +7,95 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+    /* Ensures text is centered on small screens */
 }
 
+/* Error Image */
 .error-image {
     height: 50%;
+    max-width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    /* Adjusted for better responsiveness */
     color: #333;
     font-weight: 700;
 }
 
-img {
+/* Image inside the error section */
+.error-image img {
     width: 100%;
-    height: 100%;
-    object-fit: fill;
+    max-width: 300px;
+    /* Prevents images from being too large on big screens */
+    height: auto;
+    object-fit: contain;
+    /* Prevents image distortion */
 }
 
+/* Error Message */
 .error-message {
-    margin-top: 2rem;
-    font-size: 1.6rem;
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+    /* Slightly smaller font for better readability */
     gap: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-
+    max-width: 80%;
 }
 
+/* Error Button */
 .error-button {
-    padding: 1rem 2rem;
+    padding: 0.8rem 1.6rem;
     background-color: #333;
     color: #fff;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 700;
     border: none;
-    border-radius: 1rem;
+    border-radius: 0.8rem;
     cursor: pointer;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.error-button:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .error-image {
+        font-size: 2rem;
+    }
+
+    .error-message {
+        font-size: 1.2rem;
+        max-width: 90%;
+    }
+
+    .error-button {
+        font-size: 1.2rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .error-image {
+        font-size: 1.8rem;
+    }
+
+    .error-message {
+        font-size: 1.1rem;
+        max-width: 95%;
+    }
+
+    .error-button {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
 }

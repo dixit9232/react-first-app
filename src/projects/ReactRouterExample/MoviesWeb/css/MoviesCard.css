@@ -7,11 +7,6 @@
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
-    -webkit-transition: transform 0.3s ease-in-out;
-    -moz-transition: transform 0.3s ease-in-out;
-    -ms-transition: transform 0.3s ease-in-out;
-    -o-transition: transform 0.3s ease-in-out;
-
 }
 
 .card:hover {
@@ -42,14 +37,12 @@
     background: #ff4500;
     color: white;
     font-size: 1.5rem;
-
     text-decoration: none;
-cursor: pointer;
-    bottom: 0;
+    cursor: pointer;
     outline: none;
     border: none;
     padding: 1rem 0;
-
+    transition: background 0.3s ease-in-out;
 }
 
 .watch-now:hover {
@@ -59,13 +52,54 @@ cursor: pointer;
 .grid {
     display: grid;
     margin: 2rem 0;
-}
-
-.grid-four-cols {
-    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 }
 
-.nav-link{
+/* Responsive Grid Layout */
+.grid-four-cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Tablet View */
+@media screen and (max-width: 1024px) {
+    .grid-four-cols {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    .grid-four-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-title {
+        font-size: 1.6rem;
+    }
+
+    .watch-now {
+        font-size: 1.4rem;
+    }
+}
+
+/* Small Mobile View */
+@media screen and (max-width: 480px) {
+    .grid-four-cols {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card-title {
+        font-size: 1.4rem;
+    }
+
+    .watch-now {
+        font-size: 1.3rem;
+        padding: 0.8rem 0;
+    }
+}
+
+/* Full-width navigation links on mobile */
+.nav-link {
     width: 100%;
+    text-align: center;
 }
