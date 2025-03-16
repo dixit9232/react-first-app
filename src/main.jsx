@@ -3,7 +3,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 // import "./index.css";
 import { App } from "./App.jsx";
-import "./projects/ReactRouterExample/MoviesWeb/css/index.css";
+
 
 const rootElement = document.getElementById("root");
 
