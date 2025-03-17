@@ -52,9 +52,9 @@
 // };
 
 ///-------------------------------------------------- New Code ---------------------------------------------------------------
-import { Posts } from "./projects/axios-example/pages/Posts";
+import { Accordion } from "./projects/accordion/pages/Accordion";
 
 
 export const App = () => {
-  return <Posts />;
+  return <Accordion />;
 };

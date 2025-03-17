@@ -1,0 +1,154 @@
+/* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Accordion Section */
+.accordion-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Updated Heading */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #f0f0f0;
+    margin-bottom: 20px;
+}
+
+/* Accordion List */
+.accordion-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Accordion Items */
+.accordion-item {
+    border: 1px solid #444;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Glow Effect on Hover */
+.accordion-item:hover {
+    box-shadow: 0px 0px 15px rgba(0, 255, 170, 0.5);
+    border-color: #00ffaa;
+}
+
+/* Flexbox for Alignment */
+.accordion-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2a2a2a;
+    padding: 15px;
+    transition: background 0.3s;
+}
+
+/* Hover Effect */
+.accordion-flex:hover {
+    background: #3a3a3a;
+}
+
+/* Question Styles */
+.accordion-flex h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* Button Styles */
+.accordion-flex button {
+    background: #009688;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Glow Effect on Hover */
+.accordion-flex button:hover {
+    background: #00796b;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 255, 170, 0.7);
+}
+
+/* Glow Effect on Active Click */
+.accordion-flex button.active-button {
+    background: #ff5722;
+    box-shadow: 0px 0px 15px rgba(255, 87, 34, 0.7);
+    transform: scale(1.1);
+}
+
+/* Accordion Answer - Smooth Open/Close */
+.accordion-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    background: #1e1e1e;
+    font-size: 1rem;
+    color: #f0f0f0;
+    opacity: 0;
+    transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out, padding 0.4s ease-in-out;
+}
+
+/* Active State - Show Answer */
+.accordion-item.active .accordion-answer {
+    max-height: 200px;
+    padding: 15px;
+    opacity: 1;
+}
+
+/* Trendy Animation (Bounce) */
+.accordion-item.active {
+    animation: bounceIn 0.5s ease-in-out;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.9);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .accordion-section {
+        padding: 15px;
+    }
+
+    .accordion-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .accordion-flex button {
+        margin-top: 5px;
+    }
+}
